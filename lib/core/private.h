@@ -153,7 +153,7 @@ extern "C" {
 #if defined(__clang__)
 #define lws_memory_barrier() __sync_synchronize()
 #elif defined(__GNUC__)
-#define lws_memory_barrier() __sync_synchronize()
+#define lws_memory_barrier() //__sync_synchronize()
 #else
 #define lws_memory_barrier()
 #endif

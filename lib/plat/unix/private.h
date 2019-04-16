@@ -109,7 +109,7 @@
 #if defined (__sun) || defined(__HAIKU__) || defined(__QNX__)
 #include <syslog.h>
 #else
-#include <sys/syslog.h>
+#include <syslog.h>
 #endif
 
 #ifdef __QNX__
